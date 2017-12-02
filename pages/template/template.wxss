@@ -1,0 +1,85 @@
+/* pages/template/template.wxss */
+.pic image{
+  height: 150px;
+  width: 100px;
+  vertical-align: top;
+  padding-left: 5px;
+}
+
+.movies{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  border-bottom: 1px solid #888;
+}
+
+.movies_info{
+  padding-left: 10px;
+}
+
+.top_info{
+  color: #3a3a3a;
+  font-size: 16px;
+  padding-top: 10px;
+}
+.base_info{
+  color: #3a3a3a;
+  font-size: 12px;
+  padding-top: 5px;
+  line-height: 20px;
+}
+
+
+.swiper {
+ height: 400rpx;
+ width: 100%;
+}
+.swiper image {
+ height: 100%;
+ width: 100%;
+}
+
+
+.section{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.search {
+  background-color: #f2f2f2;
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-img {
+  margin: auto 0 auto 20rpx;
+}
+
+.search input {
+  height: 100%;
+  width: 600rpx;
+  margin-left: 20px;
+  font-size: 28rpx;
+}
+
+.placeholder {
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-left: 20rpx;
+}
+.search-panel{
+    position:absolute;
+    top:80rpx;
+}
+.x{
+  width:80rpx;
+}
+.xx{
+  font-size: 40rpx;
+  color:#666;
+  margin:12rpx;
+  display:inline-block;
+}

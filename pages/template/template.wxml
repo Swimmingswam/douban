@@ -1,0 +1,44 @@
+<!--pages/template/template.wxml-->
+<template name="movie">
+  <view class='movies' bindtap='moview_touch' data-id="{{item.id}}">
+    <view class='pic'>
+      <image src="{{item.images.medium}}"></image>
+    </view>
+    <view class='movies_info'>
+      <view top_info>
+        <text>电影：{{item.title}}</text>
+      </view>
+      <view class='base_info'>
+        <text>导演：{{item.directors[0].name}} 演员：
+          <text wx:for="{{item.casts}}" wx:key="this">{{item.name}} </text>
+          <text>\n类型：{{item.genres}}</text>
+          <text>\n年份：{{item.year}}</text>
+          <text>\n评分：{{item.rating.average}}</text>
+        </text>
+      </view>
+    </view>
+  </view>
+</template>
+
+
+<template name="lunbo">
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <block wx:for="{{movies_data}}" wx:key="this">
+      <swiper-item>
+        <image src="{{item.images.large}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+</template>
+
+<template name="search">
+  <view class="search">
+  <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+  <input type="text" placeholder="请输入电影关键字" 
+  placeholder-class="placeholder" bindfocus="onBindFocus"
+ bindblur="onBindBlur" value="{{searchValue}}"/>
+  <view catchtap="change" class="x" >
+  <text class="xx">X</text>
+  </view>
+</view>
+</template>

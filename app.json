@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/comming/comming",
+    "pages/top250/top250",
+   "pages/now/now",
+    "pages/logs/logs",
+    "pages/detail/detail"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/now/now",
+        "text": "正在热映",
+        "iconPath": "images/unselect/bbs.jpg",
+        "selectedIconPath": "images/select/bbs.jpg"
+      },
+      {
+        "pagePath": "pages/top250/top250",
+        "text": "top250",
+        "iconPath": "images/unselect/home.jpg",
+        "selectedIconPath": "images/select/home.jpg"
+      },
+      {
+        "pagePath": "pages/comming/comming",
+        "text": "即将上映",
+        "iconPath": "images/unselect/require.jpg",
+        "selectedIconPath": "images/select/require.jpg"
+      }
+
+    ]
+  }
+}

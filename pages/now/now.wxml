@@ -1,0 +1,10 @@
+<!--pages/now/now.wxml-->
+<import src="../template/template.wxml" />
+<view>
+  <template is="search" />
+  <view wx:if="{{containerShow}}">
+    <block wx:for="{{movies_data}}" wx:key="this" wx:for-item="item">
+      <template is="movie" data="{{item}}" />
+    </block>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+<!--pages/detail/detail.wxml-->
+<text class='top_info'>{{movies_data.title}}</text>
+<view class='movies'>
+  <view class='pic'>
+    <image src="{{movies_data.images.medium}}"></image>
+  </view>
+  <view class='movies_info'>
+    <view class='base_info'>
+      <text>导演：{{movies_data.directors[0].name}} 主演：
+        <text wx:for="{{movies_data.casts}}" wx:key="this">{{item.name}} / </text>
+        <text>\n类型：{{movies_data.genres}}</text>
+        <text>\n制片国家/地区：{{movies_data.countries}} </text>
+        <text>\n年份：{{movies_data.year}}</text>
+        <text>\n评分：{{movies_data.rating.average}}</text>
+        <text>\n又名：{{movies_data.aka}}</text>
+      </text>
+      <button type="primary" bindtap='open_movie'>播放</button>
+    </view>
+  </view>
+</view>
+
+<text class='base_info'>简介:\n\t{{movies_data.summary}}</text>
+
+<template name="casts_message">
+  <view>
+    <view class='casts_pic'>
+      <image src="{{avatars.small}}"></image>
+      <view>
+        <text class='base_info'>{{name}} </text>
+      </view>
+    </view>
+  </view>
+</template>
+
+<view>
+  <view class='movies_casts'>
+    <text class='base_info'>{{movies_data.title}} 的影人</text>
+  </view>
+  <view class='moview_casts_msg'>
+    <view wx:for="{{movies_data.casts}}">
+      <template is="casts_message" data="{{...item}}" />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+/* pages/detail/detail.wxss */
+/* pages/details/details.wxss */
+.pic image{
+  height: 150px;
+  width: 100px;
+  vertical-align: top;
+  padding-left: 5px;
+}
+
+.movies{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  border-bottom: 1px solid #888;
+}
+
+.movies_info{
+  padding-left: 10px;
+}
+
+.top_info{
+  color: #3a3a3a;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.base_info{
+  color: #3a3a3a;
+  font-size: 12px;
+  padding-top: 5px;
+  line-height: 20px;
+}
+
+.base_info button{
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.movies_casts{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #888;
+}
+
+.casts_pic{
+  height: 100px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+.casts_pic image{
+  height: 80px;
+  width: 60px;
+  vertical-align: top;
+}
+.moview_casts_msg{
+  display: flex;
+  flex-direction: row;
+}
